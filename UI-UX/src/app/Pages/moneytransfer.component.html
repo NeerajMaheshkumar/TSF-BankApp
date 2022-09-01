@@ -1,0 +1,27 @@
+<h2 style="text-align:center">Money Transfer</h2>
+<form [formGroup]="MoneyTransferFormGroup"(ngSubmit)="onSubmit()">
+ 
+
+                <div [hidden]="submitted" style="width: 400px;">
+                    <form (ngSubmit)="onSubmit()">
+                      <div class="form-group">
+                        <label for="name">Customer Code</label>
+                        <input type="text" class="form-control" id="customercode" required [(ngModel)]="moneytransfer.customerCode" name="customercode">
+                      </div>
+                  
+                      <div class="form-group">
+                        <label for="name">Amount to Transfer</label>
+                        <input type="text" class="form-control" id="amounttransferred" required [(ngModel)]="moneytransfer.amountTransferred" name="amounttransferred">
+                      </div>
+                  
+                      <div class="form-group">
+                        <label for="name">Remarks</label>
+                        <input type="text" class="form-control" id="remarks" required [(ngModel)]="moneytransfer.remarks" name="remarks">
+                      </div>
+                
+             
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="button"  mat-button class="submitbtncss" (click)="onSubmit()"  >Submit</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="button" mat-button class="cancelbtncss"> Cancel</button>

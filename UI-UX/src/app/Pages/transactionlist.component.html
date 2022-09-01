@@ -1,0 +1,30 @@
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <br>
+      <h2 style="text-align:center">Transaction List</h2>
+    </div>
+    <div class="panel-body">
+      <table class="table table-striped" text-align>
+        <thead>
+          <tr style="text-align:center">
+            <th>Customer Code</th>
+            <th>Date</th>
+            <th>Amount Transferred</th>
+            <th>Remarks</th>
+          </tr>
+        </thead>
+        <tbody>
+         
+       <tr *ngFor="let transaction of transaction" style="background-color:rgb(255, 170, 121)">
+                  <td style="text-align:center">{{transaction.customerCode}}</td> 
+                  <td style="text-align:center">{{transaction.dateofTransfer}}</td>
+                  <td style="text-align:center">{{transaction.amountTransferred}}</td>
+                  <td style="text-align:center">{{transaction.remarks}}</td>
+           <tr>  
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>

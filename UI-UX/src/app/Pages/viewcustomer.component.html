@@ -1,0 +1,36 @@
+<h2>Customer Details</h2> 
+
+<hr/>
+<div *ngIf="customer">
+  <div>
+    <label><b>Customer Code: </b></label> {{customer.customerCode}}
+  </div>
+  <div>
+    <label><b>Customer Name: </b></label> {{customer.customerName}}
+  </div>
+  <div>
+    <label><b>Phone Number: </b></label> {{customer.phoneNumber}}
+  </div>  
+
+  <div>
+    <label><b>Email ID: </b></label> {{customer.emailId}}
+  </div>  
+
+  <div>
+    <label><b>Aadhar Number: </b></label> {{customer.aadharNumber}}
+  </div>  
+
+  <div>
+    <label><b>Gender: </b></label> {{customer.gender}}
+  </div>  
+
+  <div>
+    <label><b>Current Balance: </b></label> {{customer.currentBalance}}
+  </div>  
+
+</div>
+
+<br>
+<br>
+<a href= "http://localhost:3000/Pages/customerlist"  class="btn btn-info">Back to Customer List</a>
+
